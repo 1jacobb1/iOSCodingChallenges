@@ -17,6 +17,11 @@ import SwiftUI
                 title: "Spatial Decoder",
                 description: "is a component or function that reconstructs readable text or output by interpreting data based on spatial coordinates (e.g., placing characters at specific x, y positions to form a message or image).",
                 route: .spatialDecoder
+            ),
+            (
+                title: "Palindrome",
+                description: "is a word, phrase, number, or sequence that reads the same both forward and backward.",
+                route: .palindrome
             )
         ]
         self.onTapItem = onTapItem

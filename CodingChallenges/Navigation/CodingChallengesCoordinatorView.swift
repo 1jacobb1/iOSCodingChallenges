@@ -27,6 +27,8 @@ struct CodingChallengesCoordinatorView: View {
                     switch route {
                     case .spatialDecoder:
                         appContainer.makeSpatialDecoderScreen()
+                    case .palindrome:
+                        appContainer.makePalindromeScreen()
                     }
                 }
         }
