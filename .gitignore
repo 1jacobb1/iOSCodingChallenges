@@ -1,0 +1,54 @@
+# ==========================================
+# Xcode & SwiftUI Build Artifacts
+# ==========================================
+build/
+DerivedData/
+*.moved-aside
+
+# ==========================================
+# User-Specific Data (Keeps workspace clean)
+# ==========================================
+userdata/
+xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Do NOT ignore shared workspace settings or schemes
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+!xcshareddata/
+!xcschemes/
+
+# ==========================================
+# Swift Package Manager (SPM) & Tools
+# ==========================================
+.build/
+.swiftpm/
+Packages/
+
+# Keep Package.resolved committed so the team uses identical dependency versions
+!Package.resolved
+
+# ==========================================
+# macOS System Files
+# ==========================================
+.DS_Store
+.Trashes
+
+# ==========================================
+# Sensitive Configuration (Optional)
+# ==========================================
+# Uncomment the line below if you use local keys in .xcconfig files
+# *.xcconfig
+
+# ==========================================
+# Third-Party Dependencies (If applicable)
+# ==========================================
+# Pods/
+# Carthage/Checkouts
+# Carthage/Build
+
