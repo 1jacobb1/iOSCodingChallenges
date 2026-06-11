@@ -22,6 +22,11 @@ import SwiftUI
                 title: "Palindrome",
                 description: "is a word, phrase, number, or sequence that reads the same both forward and backward.",
                 route: .palindrome
+            ),
+            (
+                title: "Anagram",
+                description: "An anagram is a word or phrase formed by rearranging the letters of another word or phrase. To create a perfect anagram, you must use all the original letters exactly once.",
+                route: .anagram
             )
         ]
         self.onTapItem = onTapItem

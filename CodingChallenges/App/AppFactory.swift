@@ -5,4 +5,4 @@
 //  Created by Jacob on 6/11/26.
 //
 
-protocol AppFactory: SpatialDecoderFactory & PalindromeFactory {}
+protocol AppFactory: SpatialDecoderFactory & PalindromeFactory & AnagramFactory {}

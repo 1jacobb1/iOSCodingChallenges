@@ -29,6 +29,8 @@ struct CodingChallengesCoordinatorView: View {
                         appContainer.makeSpatialDecoderScreen()
                     case .palindrome:
                         appContainer.makePalindromeScreen()
+                    case .anagram:
+                        appContainer.makeAnagramScreen()
                     }
                 }
         }
