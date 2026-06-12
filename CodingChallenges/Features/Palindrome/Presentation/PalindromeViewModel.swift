@@ -11,19 +11,9 @@ import Combine
 @Observable final class PalindromeViewModel {
     var textInput = ""
     var isValid: Bool? = nil
+    let useCase = PalindromeUseCase()
 
     func handleTextOnChange(text: String) {
-        if text.count >= 2 {
-            isValid = text.isPalindrome()
-        } else {
-            isValid = nil
-        }
-    }
-}
-
-extension String {
-    func isPalindrome() -> Bool {
-        let reversed = String(self.reversed())
-        return self.lowercased() == reversed.lowercased()
+        isValid = useCase.isPalindrome(text: text)
     }
 }
