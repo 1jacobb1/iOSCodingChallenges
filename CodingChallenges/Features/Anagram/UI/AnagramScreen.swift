@@ -14,9 +14,9 @@ struct AnagramScreen: View {
         ScrollView {
             VStack(alignment: .leading) {
                 Text("An anagram is a word or phrase formed by rearranging the letters of another word or phrase. To create a perfect anagram, you must use all the original letters exactly once.")
-                Text("Example: \nLiten -> Silent \n Debit Card -> Bad credit \n Dormityor -> Dirty room")
-                    .padding(.top, 3)
 
+                Text("Example: \nListen -> Silent \n Debit Card -> Bad credit \n Dormityor -> Dirty room")
+                    .padding(.top, 3)
 
                 Text("Enter text or sentence to check if it is an *ANAGRAM* or *NOT*")
                     .padding(.top, 10)
