@@ -12,6 +12,11 @@ import Combine
     var textInput1 = ""
     var textInput2 = ""
     var isValid: Bool? = nil
+    let useCase: AnagramUseCase
+
+    init(useCase: AnagramUseCase = AnagramUseCase()) {
+        self.useCase = useCase
+    }
 
     func handleText1OnChange(text: String) {
         handleTextChange(text: text, otherText: textInput2)
@@ -22,19 +27,6 @@ import Combine
     }
 
     private func handleTextChange(text: String, otherText: String) {
-        if text.isEmpty || otherText.isEmpty {
-            isValid = nil
-        } else {
-            isValid = text.isAnagram(otherWord: otherText)
-        }
-    }
-}
-
-extension String {
-    func isAnagram(otherWord: String) -> Bool {
-        let thisText = self.lowercased().replacingOccurrences(of: " ", with: "")
-        let otherText = otherWord.lowercased().replacingOccurrences(of: " ", with: "")
-        guard thisText.count == otherText.count else { return  false }
-        return thisText.sorted() == otherText.sorted()
+        isValid = useCase.isAnagram(text: text, otherText: otherText)
     }
 }
