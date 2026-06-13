@@ -25,12 +25,10 @@ struct CodingChallengesCoordinatorView: View {
             CodingChallengesScreen(viewModel: codingChallengesViewModel)
                 .navigationDestination(for: CodingChallengesRoute.self) { route in
                     switch route {
-                    case .spatialDecoder:
-                        appContainer.makeSpatialDecoderScreen()
-                    case .palindrome:
-                        appContainer.makePalindromeScreen()
-                    case .anagram:
-                        appContainer.makeAnagramScreen()
+                    case .spatialDecoder: appContainer.makeSpatialDecoderScreen()
+                    case .palindrome: appContainer.makePalindromeScreen()
+                    case .anagram: appContainer.makeAnagramScreen()
+                    case .fizzbuzz: appContainer.makeFizzbuzzScreen()
                     }
                 }
         }
