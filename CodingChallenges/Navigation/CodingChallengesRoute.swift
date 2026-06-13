@@ -9,4 +9,5 @@ enum CodingChallengesRoute: Hashable {
     case spatialDecoder
     case palindrome
     case anagram
+    case fizzbuzz
 }

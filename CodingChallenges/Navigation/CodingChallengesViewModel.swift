@@ -27,6 +27,11 @@ import SwiftUI
                 title: "Anagram",
                 description: "An anagram is a word or phrase formed by rearranging the letters of another word or phrase. To create a perfect anagram, you must use all the original letters exactly once.",
                 route: .anagram
+            ),
+            (
+                title: "Fizzbuzz",
+                description: "Given a number that displays from 1 to n, and displays `fizzbuzz` if number is divisible by 5 and 3, `fizz` if divisable by 3, `buzz` if divisable by 5.",
+                route: .fizzbuzz
             )
         ]
         self.onTapItem = onTapItem
